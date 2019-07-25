@@ -1,0 +1,97 @@
+  /*①先去除自带的边距
+    ②把盒子模型都重新定义一下
+    ③代码书写顺序 定位->盒子模型的一系列属性->排版（字体属性）->外观(background-color  border border-radius)
+  */
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+   }
+  /*头部区域*/
+  .nav {
+      width: 100%;
+      height: 70px;
+      background-color: orange;
+   } 
+  /*标题*/
+  .nav-title {
+      float: left;
+      width: 90%;
+      height: 70px;
+      padding-left: 15px;
+      font: bold 20px "微软雅黑";
+      line-height: 70px;
+      color:white;
+
+  } 
+  .nav-link {
+      float: left;
+      width: 10%;
+   } 
+  /*登陆和注册*/
+  .nav-link__login,
+  .nav-link__registe {
+      height: 70px;
+      margin: 0 15px; 
+      line-height: 70px;  
+   }
+  .content {
+      width: 100%;
+   } 
+  /*主要的内容区域*/
+  .content-entrance {
+      width: 500px;
+      height: 500px;
+      margin:50px auto;
+      border: 2px solid black;
+   }
+  /*登陆和注册切换*/
+  .content-header {
+      width: 100%;
+      height: 50px;
+      box-shadow: 2px 2px 1px 1px black;
+   }
+  .content-header>a {
+      display: block;
+      float: left;
+      width: 50%;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 15px;
+      color: black;
+      border-bottom: 1px solid black;
+   }
+  .content-header>a:first-child {
+      background-color: #7b9bc2;
+      border-right: 1px solid black;
+   }
+  /*登陆和注册切换对应的内容*/
+  .content-body {
+      width: 100%;
+      height: 360px;
+      padding: 0 30px;
+   }
+  .content-body__login,
+  .content-login__message {
+      height: 100%;
+   }
+  .content-login__public {
+    margin-top: 40px;
+   }
+  .btn-success {
+      width: 100%;
+      height: 50px;
+   }
+  .footer {
+     width: 100%;
+   }
+  .footer-link {
+      width: 100%;
+      padding: 0 30px;
+      text-align: left;
+   }
+  .footer-link__find {
+      padding-right: 15px;
+      border-right: 2px solid black;
+   }
